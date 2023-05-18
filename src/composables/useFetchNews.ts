@@ -5,7 +5,7 @@ export const useFetchNews = async (isHeadline?: boolean, search?: string, catego
   const query = `q=${search ? search : 'World'}`
   const cat = `${search? '&': ''}category=${category ? category : 'general'}`
   const date = `&to=${new Date().toISOString()}`
-  const apiKey = `&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`
+  const apiKey = `&apiKey=dd9be277916c4188ad708fc7d9c5644b`
   const type = isHeadline ? 'top-headlines' : 'everything'
   const url = `https://newsapi.org/v2/${type}?${search? query: ''}${cat ? cat : ''}${date}${apiKey}&pageSize=${pageSize}&country=us`
 

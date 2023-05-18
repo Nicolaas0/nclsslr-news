@@ -2,6 +2,7 @@
   # bypass npm auto install
   NPM_FLAGS = "--version"
   NODE_VERSION = "16"
+  VITE_NEWS_API_KEY="dd9be277916c4188ad708fc7d9c5644b"
 
 [build]
   publish = "dist"

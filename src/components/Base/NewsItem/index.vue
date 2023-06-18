@@ -21,7 +21,7 @@ const toArticle = (title:string) => {
 
 <template>
   <div class='group flex flex-col bg-white lg:w-[500px] justify-center items-center transition-all duration-300 border-2 border-gray-200 border-solid rounded-2xl hover:border-[#93A8AC]'>
-    <img v-if='props.data?.urlToImage' :src='props.data?.urlToImage' class='rounded-t-2xl w-full h-[250px] object-cover cursor-pointer'>
+    <img v-if='props.data?.urlToImage' :src='props.data?.urlToImage' class='rounded-t-2xl w-full h-[250px] object-cover cursor-pointer' @click="toArticle(props.data?.title)">
     <div class='flex flex-col justify-between p-4'>
       <div>
         <div class="text-2xl font-bold cursor-pointer transition-all duration-300" @click="toArticle(props.data?.title)">{{ props.data?.title }}</div>

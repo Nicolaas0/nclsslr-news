@@ -31,7 +31,7 @@ const toArticle = (title:string) => {
 }
 
 onMounted(async () => {
-  data.value = await useFetchNews(true, '' ,'', '5')
+  data.value = await useFetchNews(true, '' ,'', '4')
 })
 </script>
 

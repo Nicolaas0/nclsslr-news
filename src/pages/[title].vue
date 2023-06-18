@@ -34,7 +34,7 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col lg:justify-between lg:flex-row">
         <template v-if="data?.data?.articles">
         <div class="flex flex-col justify-center items-center">
         <img :src="data?.data?.articles[0].urlToImage" class="w-full lg:w-[850px] lg:h-[400px] rounded-t-xl object-cover">

@@ -8,7 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Card: typeof import('./src/components/Base/Card/index.vue')['default']
-    Category: typeof import('./src/components/Base/Home/Category.vue')['default']
+    Category: typeof import('./src/components/Base/Category/index.vue')['default']
     CategoryList: typeof import('./src/components/Base/Home/CategoryList.vue')['default']
     Footer: typeof import('./src/components/Base/Footer/index.vue')['default']
     HomeNewsGroup: typeof import('./src/components/Base/Home/HomeNewsGroup.vue')['default']
@@ -16,6 +16,7 @@ declare module '@vue/runtime-core' {
     NewsItem: typeof import('./src/components/Base/NewsItem/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TrendingSection: typeof import('./src/components/Index/TrendingSection.vue')['default']
     Welcome: typeof import('./src/components/Base/Home/Welcome.vue')['default']
   }
 }

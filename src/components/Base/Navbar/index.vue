@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 
@@ -9,5 +10,17 @@ const clickHandler = () => {
 </script>
 
 <template>
-  <div style="box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;" class='p-1 bg-white min-h-[50px] flex justify-center items-center font-semibold mb-5 nav-title cursor-pointer' @click="clickHandler">Nclsslr 💻</div>
+  <div
+    class="p-1 min-h-[50px] flex justify-between items-center font-semibold mb-5 nav-title cursor-pointer px-10 pt-12"
+    @click="clickHandler">
+    <div class="flex items-center gap-5">
+      <img src="../../../../public/icons/barIcon.svg" />
+      <div class="text-lg">Menu</div>
+    </div>
+    <div class="text-3xl font-bold">NCLSSLR</div>
+    <div class="flex items-center gap-5">
+      <div class="text-lg font-semibold">Newsletters</div>
+      <img src="../../../../public/icons/magnifyIcon.svg">
+    </div>
+  </div>
 </template>

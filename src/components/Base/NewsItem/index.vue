@@ -1,34 +1,56 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang='ts'>
-import dayjs from 'dayjs'
-import { useRouter } from 'vue-router'
-
-
 const props = defineProps({
+  type: {
+    type: String,
+    default: ''
+  },
   data: {
-    type: Object
+    type: Object,
+    default: () => ({
+      image: '../../../../public/newsExam.png',
+      title: 'Lorem Ipsum',
+      author: 'Lorem lorem',
+      date: '11 Aug 2023',
+      desc: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+    })
   }
 })
-
-const router = useRouter()
-
-const toArticle = (title:string) => {
-  console.log(title)
-  const url = title.split(' ').join('-')
-  console.log(url)
-  router.push(`/${url}`)
-}
+const categories = ['Culture', 'Music']
 </script>
 
 <template>
-  <div class='group flex flex-col bg-white lg:w-[500px] justify-center items-center transition-all duration-300 border-2 border-gray-200 border-solid rounded-2xl hover:border-[#93A8AC]'>
-    <img v-if='props.data?.urlToImage' :src='props.data?.urlToImage' class='rounded-t-2xl w-full h-[250px] object-cover cursor-pointer' @click="toArticle(props.data?.title)">
-    <div class='flex flex-col justify-between p-4'>
-      <div>
-        <div class="text-2xl font-bold cursor-pointer transition-all duration-300" @click="toArticle(props.data?.title)">{{ props.data?.title }}</div>
-        <div class="text-sm mb-4 text-gray-500">
-          {{ props.data?.author }} --  {{ dayjs(props.data?.publishedAt).format('MMM YYYY') }}</div>
-      </div>
-      <div>{{ props.data?.description }}</div>
+  <div>
+    <div v-if="props.type === 'headline'" class='background-div flex flex-col justify-between py-5 px-6' style="background-image: url('../../../../public/newsExam.png');">
+    <!-- Categories -->
+    <div class="flex gap-3">
+      <div v-for="(item, index) in categories" :key="index" class="px-2 py-1 border border-white rounded-md text-white w-fit cursor-default text-sm">{{ item }}</div>
+    </div>
+    <!-- Desc -->
+    <div class="flex flex-col gap-2">
+      <div class="text-[#D0D0D0] text-xs">6 August, 2023</div>
+      <div class="text-[#99CCFF] text-2xl ">Kanye West Starring in : The Devil Wears Yeezy</div>
+      <div class="max-w-[415px] text-sm text-white">Lorem ipsum dolor sit amet consectetur. Integer velit ultricies sed a vulputate pellentesque. Quam at etiam faucibus ipsum etiam sit tristique. Porttitor quis id tellus sit at.</div>
+      <btn class="bg-white text-black text-sm rounded-lg p-[10px] w-fit mt-4 cursor-pointer">Read More</btn>
+    </div>
+    </div>
+    <div v-else class="w-full space-y-2">
+      <img class="min-h-[280px] w-full object-cover" src="../../../../public/newsExam2.png">
+      <div class="text-[#426AA8] text-sm font-bold">Kanye West Starring in : The Devil Wears Yeezy</div>
+      <div class="text-xs mb-1">Lorem ipsum dolor sit amet consectetur. Integer velit ultricies sed a vulputate pellentesque. Quam at etiam faucibus ipsum etiam sit tristique. Porttitor quis id tellus sit at.</div>
+      <div class="text-[#426AA8] text-[8px]">6 August, 2023 | By Nicolaas</div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.background-div {
+  width: 100%;
+  /* Set the width as needed */
+  height: 350px;
+  /* Set the height as needed */
+  background-size: cover;
+  /* Adjust the size of the background image */
+  background-repeat: no-repeat;
+  /* Prevent image repetition */
+}</style>

@@ -1,12 +1,14 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang='ts'>
 console.log('Mounted')
 </script>
 
 <template>
-  <div class="bg-[#F6F6F6]">
+  <div class="w-full h-full bg-[#F7F4F0]">
     <Navbar />
+    <Category />
     <!-- Page Content -->
-    <RouterView class="px-6 lg:px-10 lg:pb-10" />
+    <RouterView />
     <!-- Page Content -->
   </div>
 </template>

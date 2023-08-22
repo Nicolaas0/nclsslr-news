@@ -1,6 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang='ts'>
-console.log('Mounted')
 </script>
 
 <template>

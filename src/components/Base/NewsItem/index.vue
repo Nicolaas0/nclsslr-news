@@ -21,7 +21,7 @@ const categories = ['Culture', 'Music']
 
 <template>
   <div>
-    <div v-if="props.type === 'headline'" class='background-div flex flex-col justify-between py-5 px-6' style="background-image: url('../../../../public/newsExam.png');">
+    <div v-if="props.type === 'headline'" class='background-div flex flex-col justify-between py-5 px-6' style="background-image: url('https://cdn.discordapp.com/attachments/1112433851491426304/1143559663028293762/newsExam.png');">
     <!-- Categories -->
     <div class="flex gap-3">
       <div v-for="(item, index) in categories" :key="index" class="px-2 py-1 border border-white rounded-md text-white w-fit cursor-default text-sm">{{ item }}</div>

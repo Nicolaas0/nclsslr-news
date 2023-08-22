@@ -16,7 +16,7 @@ const props = defineProps({
     })
   }
 })
-const categories = ['Culture', 'Music']
+const categories = ['Culture', 'Music', 'Artist']
 </script>
 
 <template>

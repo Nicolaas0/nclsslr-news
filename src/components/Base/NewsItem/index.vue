@@ -33,7 +33,7 @@ const categories = ['Culture', 'Music', 'Artist']
       <!-- Desc -->
       <div class="flex flex-col gap-2">
         <div class="text-[#D0D0D0] text-xs">6 August, 2023</div>
-        <div class="text-[#99CCFF] text-2xl ">Kanye West Starring in : The Devil Wears Yeezy</div>
+        <div class="text-[#99CCFF] text-2xl cursor-pointer">Kanye West Starring in : The Devil Wears Yeezy</div>
         <div class="max-w-[415px] text-sm text-white">Lorem ipsum dolor sit amet consectetur. Integer velit ultricies sed
           a vulputate pellentesque. Quam at etiam faucibus ipsum etiam sit tristique. Porttitor quis id tellus sit at.
         </div>
@@ -42,18 +42,18 @@ const categories = ['Culture', 'Music', 'Artist']
     </div>
     <div v-else-if="props.type === 'regular'" class="w-full space-y-2">
       <img class="min-h-[280px] w-full object-cover" src="../../../../public/newsExam2.png">
-      <div class="text-[#426AA8] text-sm font-bold">Kanye West Starring in : The Devil Wears Yeezy</div>
+      <div class="text-[#426AA8] text-sm font-bold cursor-pointer">Kanye West Starring in : The Devil Wears Yeezy</div>
       <div class="text-xs mb-1">Lorem ipsum dolor sit amet consectetur. Integer velit ultricies sed a vulputate
         pellentesque. Quam at etiam faucibus ipsum etiam sit tristique. Porttitor quis id tellus sit at.</div>
-      <div class="text-[#426AA8] text-[8px]">6 August, 2023 | By Nicolaas</div>
+      <div class="text-[#426AA8] text-[8px]">6 August, 2023 | <span class="cursor-pointer">By Nicolaas</span></div>
     </div>
     <div v-else class="flex gap-2 items-center h-full">
       <img class="max-w-[140px] h-full object-cover" src="../../../../public/newsExam2.png">
       <div>
-        <div class="text-[#426AA8] text-sm font-bold">Kanye West Starring in : The Devil Wears Yeezy</div>
+        <div class="text-[#426AA8] text-sm font-bold cursor-pointer">Kanye West Starring in : The Devil Wears Yeezy</div>
         <div class="text-xs mb-1">Lorem ipsum dolor sit amet consectetur. Integer velit ultricies sed a vulputate
           pellentesque. Quam at etiam faucibus ipsum etiam sit tristique. Porttitor quis id tellus sit at.</div>
-        <div class="text-[#426AA8] text-[8px]">6 August, 2023 | By Nicolaas</div>
+        <div class="text-[#426AA8] text-[8px]">6 August, 2023 | <span class="cursor-pointer">By Nicolaas</span></div>
       </div>
     </div>
   </div>

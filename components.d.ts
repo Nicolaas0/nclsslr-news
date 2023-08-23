@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     MustReadSection: typeof import('./src/components/Index/MustReadSection.vue')['default']
     Navbar: typeof import('./src/components/Base/Navbar/index.vue')['default']
     NewsItem: typeof import('./src/components/Base/NewsItem/index.vue')['default']
+    OtherSection: typeof import('./src/components/Index/OtherSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TrendingSection: typeof import('./src/components/Index/TrendingSection.vue')['default']

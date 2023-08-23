@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="w-full py-6 px-10">
+    <div class="w-full py-6 px-10 mb-10">
         <!-- Title -->
         <div class="flex items-center gap-3 mb-6">
             <div class="text-black text-2xl font-bold w-[270px] break-normal">Must - Reads</div>

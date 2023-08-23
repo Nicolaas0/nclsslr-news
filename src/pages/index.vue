@@ -17,5 +17,7 @@
     <TrendingSection />
     <!-- Must Read -->
     <MustReadSection />
+    <!-- Other Section -->
+    <OtherSection />
   </div>
 </template>

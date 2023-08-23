@@ -6,7 +6,7 @@
 <template>
   <div class="pb-12">
     <!-- Headline -->
-    <NewsItem type="headline" class="mb-2 px-10" />
+    <NewsItem type="headline" class="mb-2 px-10 h-[350px]" />
     <!-- Sub Headline -->
     <div class="flex gap-4 mb-10 px-10">
       <NewsItem type="regular" />
@@ -15,5 +15,7 @@
     </div>
     <!-- Trending -->
     <TrendingSection />
+    <!-- Must Read -->
+    <MustReadSection />
   </div>
 </template>

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="bg-[#E3F0F5] w-full py-6 px-10">
+    <div class="bg-[#E3F0F5] w-full py-6 px-10 mb-10">
         <!-- Title -->
         <div class="flex items-center gap-3 mb-6">
             <div class="text-[#426AA8] text-2xl font-bold w-[270px] break-normal">Trending News</div>
@@ -16,10 +16,10 @@
             </div>
         </div>
         <div class="flex gap-3">
-            <NewsItem />
-            <NewsItem />
-            <NewsItem />
-            <NewsItem />
+            <NewsItem type="regular" />
+            <NewsItem type="regular" />
+            <NewsItem type="regular" />
+            <NewsItem type="regular" />
         </div>
     </div>
 </template>

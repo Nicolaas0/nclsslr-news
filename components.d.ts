@@ -11,7 +11,6 @@ declare module '@vue/runtime-core' {
     Category: typeof import('./src/components/Base/Category/index.vue')['default']
     CategoryList: typeof import('./src/components/Base/Home/CategoryList.vue')['default']
     Footer: typeof import('./src/components/Base/Footer/index.vue')['default']
-    HomeNewsGroup: typeof import('./src/components/Base/Home/HomeNewsGroup.vue')['default']
     MustReadSection: typeof import('./src/components/Index/MustReadSection.vue')['default']
     Navbar: typeof import('./src/components/Base/Navbar/index.vue')['default']
     NewsItem: typeof import('./src/components/Base/NewsItem/index.vue')['default']

@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import VueBottomSheet from "@webzlodimir/vue-bottom-sheet";
-import "@webzlodimir/vue-bottom-sheet/dist/style.css";
-import { ref } from "vue";
+import { ref } from 'vue'
+
+const visible = ref(false)
 
 const myBottomSheet = ref < InstanceType < typeof VueBottomSheet >> ()
 
@@ -11,15 +11,11 @@ const categoryList = ['All', 'Trending', 'Art & Photography', 'Fashion & Beauty'
 const activeCategory = ref('all')
 
 const open = () => {
-    myBottomSheet.value.open();
-}
-
-const close = () => {
-    myBottomSheet.value.close();
+    visible = true
 }
 
 const changeCategory = (cat) => {
-  activeCategory.value = cat
+    activeCategory.value = cat
 }
 
 const router = useRouter()
@@ -39,23 +35,5 @@ const clickHandler = () => {
             <div class="text-lg font-semibold hidden md:block">Newsletters</div>
             <img src="../../../../public/icons/magnifyIcon.svg">
         </div>
-        <vue-bottom-sheet ref="myBottomSheet">
-            <div class="px-5 pb-5 space-y-4">
-                <h1>Select category:</h1>
-                <div class="flex items-center gap-2 flex-wrap">
-                    <div
-                        v-for="(item, index) in categoryList"
-                        :key="index"
-                        :class="{
-                            'px-3 py-1 rounded-full border border-black text-sm': true,
-                            'bg-black text-white': activeCategory.toLowerCase() === item.toLowerCase()
-                        }"
-                        @click="()=> changeCategory(item)"
-                    >
-                        {{ item }}
-                    </div>
-                </div>
-            </div>
-        </vue-bottom-sheet>
     </div>
 </template>

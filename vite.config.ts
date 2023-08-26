@@ -33,7 +33,7 @@ export default defineConfig({
   ],
   ssgOptions: {
     script: 'async',
-    formatting: 'minify'
+    formatting: 'minify',
     /**
      * Generate dynamic path based on resources on api
      */

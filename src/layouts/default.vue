@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="w-full h-full bg-[#F7F4F0]">
+  <div class="min-h-screen min-w-screen max-w-screen bg-[#F7F4F0]">
     <Navbar />
     <Category />
     <!-- Page Content -->

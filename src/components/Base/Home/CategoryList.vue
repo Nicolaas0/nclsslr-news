@@ -46,7 +46,7 @@ onMounted(async () => {
         <div class="mb-2 text-lg font-semibold nav-title">trending -- today</div>
         <template v-if="data">
         <div class="space-y-2">
-            <div class="text-sm leading-6 cursor-pointer hover:bg-white p-4" v-for="(d, i) in data?.data?.articles" :key="i" @click="toArticle(d.title)">💭 {{ d.title }}</div>
+            <div v-for="(d, i) in data?.data?.articles" :key="i" @click="toArticle(d.title)" class="text-sm leading-6 cursor-pointer hover:bg-white p-4">💭 {{ d.title }}</div>
         </div>
         </template>
         <img v-if="!data" src="../../../assets/loading.svg" class="self-center">

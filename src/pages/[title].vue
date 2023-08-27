@@ -48,6 +48,6 @@ onMounted(async () => {
         </div>
         </template>
         <img v-else src="../assets/loading.svg" class="w-[850px] self-center">
-        <CategoryList class="min-w-[250px]" @click:category="categoryChangeHandler" :data="data?.data?.articles" no-category />
+        <CategoryList class="min-w-[250px]" no-category :data="data?.data?.articles" @click:category="categoryChangeHandler" />
     </div>
 </template>

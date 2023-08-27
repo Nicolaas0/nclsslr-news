@@ -16,9 +16,6 @@ const open = () => {
         myBottomSheet.value.open();
     }
 }
-const close = () => {
-    myBottomSheet.value.close();
-}
 const changeCategory = (cat) => {
   activeCategory.value = cat
 }

@@ -37,7 +37,7 @@ function isMobile(): boolean {
 }
 </script>
 <template>
-    <div class="p-1 min-h-[50px] flex justify-between items-center font-semibold mb-10 md:mb-5 nav-title px-10 pt-12">
+    <div class="p-1 min-h-[50px] flex justify-between items-center font-semibold mb-10 md:mb-5 nav-title px-5 md:px-10 pt-12">
         <div class="flex items-center gap-5">
             <img src="../../../../public/icons/barIcon.svg" @click="open" />
             <div class="text-lg hidden md:block">Menu</div>

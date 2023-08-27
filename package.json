@@ -5,7 +5,7 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite-ssg build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
     "format": "prettier --write \"**/*.{vue,ts,js}\"",
@@ -19,6 +19,7 @@
     "@headlessui/vue": "^1.7.4",
     "@vueuse/core": "^9.5.0",
     "@vueuse/head": "^1.0.16",
+    "@webzlodimir/vue-bottom-sheet": "^3.0.5",
     "axios": "^1.1.3",
     "dayjs": "^1.11.7",
     "framer-motion": "^10.16.1",

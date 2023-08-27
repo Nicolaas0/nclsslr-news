@@ -28,12 +28,12 @@ const categories = ['Culture', 'Music', 'Artist']
       <!-- Categories -->
       <div class="flex gap-3">
         <div v-for="(item, index) in categories" :key="index"
-          class="px-2 py-1 border border-white rounded-md text-white w-fit cursor-default text-sm">{{ item }}</div>
+          class="px-2 py-1 border border-white rounded-md text-white w-fit cursor-default text-xs md:text-sm">{{ item }}</div>
       </div>
       <!-- Desc -->
       <div class="flex flex-col gap-2">
         <div class="text-[#D0D0D0] text-xs">6 August, 2023</div>
-        <div class="text-[#99CCFF] text-2xl cursor-pointer">Kanye West Starring in : The Devil Wears Yeezy</div>
+        <div class="text-[#99CCFF] text-xl md:text-2xl cursor-pointer">Kanye West Starring in : The Devil Wears Yeezy</div>
         <div class="max-w-[415px] text-sm text-white">Lorem ipsum dolor sit amet consectetur. Integer velit ultricies sed
           a vulputate pellentesque. Quam at etiam faucibus ipsum etiam sit tristique. Porttitor quis id tellus sit at.
         </div>

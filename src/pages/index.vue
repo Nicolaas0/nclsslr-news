@@ -18,5 +18,9 @@
     <MustReadSection />
     <!-- Other Section -->
     <OtherSection />
+    <!-- Feature Section -->
+    <FeatureSection/>
+    <!-- Subscription Section -->
+    <SubscribeSection/>
   </div>
 </template>

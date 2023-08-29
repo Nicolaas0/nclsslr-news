@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     Card: typeof import('./src/components/Base/Card/index.vue')['default']
     Category: typeof import('./src/components/Base/Category/index.vue')['default']
     CategoryList: typeof import('./src/components/Base/Home/CategoryList.vue')['default']
+    FeatureSection: typeof import('./src/components/Index/FeatureSection.vue')['default']
     Footer: typeof import('./src/components/Base/Footer/index.vue')['default']
     MustReadSection: typeof import('./src/components/Index/MustReadSection.vue')['default']
     Navbar: typeof import('./src/components/Base/Navbar/index.vue')['default']
@@ -17,6 +18,7 @@ declare module '@vue/runtime-core' {
     OtherSection: typeof import('./src/components/Index/OtherSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SubscribeSection: typeof import('./src/components/Index/SubscribeSection.vue')['default']
     TrendingSection: typeof import('./src/components/Index/TrendingSection.vue')['default']
     Welcome: typeof import('./src/components/Base/Home/Welcome.vue')['default']
   }

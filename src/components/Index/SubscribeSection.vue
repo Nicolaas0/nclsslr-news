@@ -2,9 +2,9 @@
 
 <template>
 	<div class="flex flex-col justify-center items-center gap-11 mb-[42px]">
-		<div class="text-[26px] text-[#426AA8] font-bold">SUBSCRIBE TO OUR DAILY NEWSLETTER</div>
-		<div class="flex gap-[55px] items-baseline">
-			<div class="space-x-7">
+		<div class="text-[26px] text-[#426AA8] font-bold text-center">SUBSCRIBE TO OUR DAILY NEWSLETTER</div>
+		<div class="flex flex-col md:flex-row gap-[55px] items-baseline">
+			<div class="flex flex-col space-y-5 md:flex-row md:space-x-7">
 			<input class="text-[14px] border-b border-[#426AA8] bg-transparent" placeholder="Email">
 			<input class="text-[14px] border-b border-[#426AA8] bg-transparent" placeholder="Password">
 			</div>

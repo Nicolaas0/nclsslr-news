@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-	<div class="flex flex-col justify-center items-center gap-11">
+	<div class="flex flex-col justify-center items-center gap-11 mb-[42px]">
 		<div class="text-[26px] text-[#426AA8] font-bold">SUBSCRIBE TO OUR DAILY NEWSLETTER</div>
 		<div class="flex gap-[55px] items-baseline">
 			<div class="space-x-7">

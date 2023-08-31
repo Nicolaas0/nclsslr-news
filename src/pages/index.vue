@@ -22,5 +22,7 @@
     <FeatureSection/>
     <!-- Subscription Section -->
     <SubscribeSection/>
+    <!-- Footer -->
+    <Footer />
   </div>
 </template>

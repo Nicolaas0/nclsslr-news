@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 import { onMounted, ref } from 'vue'
-import { doc, getDoc } from "firebase/firestore";
+import { doc, getDoc, updateDoc, increment } from "firebase/firestore";
 import { db } from "../firebase.ts"
 
 const articleData = ref('')
@@ -15,6 +15,9 @@ onMounted(async () => {
     if (docSnap.exists()) {
         console.log("Document data:", docSnap.data());
         articleData.value = docSnap.data()
+        await updateDoc(docRef, {
+            views: increment(1)
+        })
     } else {
         // docSnap.data() will be undefined in this case
         console.log("No such document!");
@@ -33,6 +36,7 @@ onMounted(async () => {
         <div>{{ articleData.title }}</div>
         <div v-html="articleData.content"></div>
         <img :src="articleData.image" class="w-[300px]">
+        <div>Views: {{ articleData.views }}</div>
         <div>{{ articleData.author }}, {{ articleData.createdAt }}</div>
     </div>
 </template>

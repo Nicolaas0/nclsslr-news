@@ -4,9 +4,12 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase.ts"
 
 const articleData = ref('')
+const url = ref(window.location.pathname);
 
 onMounted(async () => {
-    const docRef = doc(db, "Article", 'AA232-312442-212313')
+    const segments = url.value.split('/');
+    const lastSegment = segments[segments.length - 1];
+    const docRef = doc(db, "Article", lastSegment)
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
